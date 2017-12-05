@@ -1,0 +1,10 @@
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\bin\Debug\netcoreapp2.0\ExemploCRUDE.deps.json
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\bin\Debug\netcoreapp2.0\ExemploCRUDE.runtimeconfig.json
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\bin\Debug\netcoreapp2.0\ExemploCRUDE.runtimeconfig.dev.json
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\bin\Debug\netcoreapp2.0\ExemploCRUDE.dll
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\bin\Debug\netcoreapp2.0\ExemploCRUDE.pdb
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\obj\Debug\netcoreapp2.0\ExemploCRUDE.csproj.CoreCompileInputs.cache
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\obj\Debug\netcoreapp2.0\ExemploCRUDE.AssemblyInfoInputs.cache
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\obj\Debug\netcoreapp2.0\ExemploCRUDE.AssemblyInfo.cs
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\obj\Debug\netcoreapp2.0\ExemploCRUDE.dll
+c:\Users\40809588897\Desktop\Programar\Semana10\ExemploCRUDE\obj\Debug\netcoreapp2.0\ExemploCRUDE.pdb
