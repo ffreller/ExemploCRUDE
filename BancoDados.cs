@@ -36,8 +36,7 @@ namespace ExemploCRUDE
                 if(r > 0)
                 
                     rs = true;
-                    Console.WriteLine("Categoria adicionada com sucesso!");
-                
+                                    
                 comandos.Parameters.Clear(); //limpar os parâmetros utilizados para a próxima execução
             }
             catch(SqlException sqlex)
