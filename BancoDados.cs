@@ -259,7 +259,6 @@ namespace ExemploCRUDE
             {
                 cn.Close();
             }
-            
             return rs;
             }
         }

@@ -17,6 +17,7 @@ namespace ExemploCRUDE
                 opcao = Console.ReadLine();
                 BancoDados bada = new BancoDados();
                 Categoria cate = new Categoria();
+                Cliente cli = new Cliente();
                 
                 switch(opcao)
                 {
