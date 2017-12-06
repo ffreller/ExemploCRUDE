@@ -9,10 +9,10 @@ namespace ExemploCRUDE
         {
             Console.WriteLine("Sistema Papelaria");
             Console.WriteLine("");
-            Console.WriteLine("Digite um das opções abaixo para seguir: ");
             int opcao;
             do
             {   
+                Console.WriteLine("Digite um das opções abaixo para seguir: ");
                 Console.WriteLine("1-Cadastrar categoria\n2-Deletar categoria\n3-Atualizar Categoria\n4-Pesquisar Categorias\n9-Sair");
                 opcao = int.Parse(Console.ReadLine());
                 BancoDados bada = new BancoDados();
@@ -87,7 +87,7 @@ namespace ExemploCRUDE
                                             }
                                         }
                                         else
-                                            {Console.WriteLine("ID não encontrado!");}
+                                            {Console.WriteLine("Título não encontrado!");}
                                     break;
                                 }
                             }
