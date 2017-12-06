@@ -34,7 +34,9 @@ namespace ExemploCRUDE
                 int r = comandos.ExecuteNonQuery(); /*execução dos comandos acima e retorna um valor referente ao total de linhas afetadas
                                                         caso o valor retorne como 0, significa que houve erro*/
                 if(r > 0)
+                
                     rs = true;
+                    Console.WriteLine("Categoria adicionada com sucesso!");
                 
                 comandos.Parameters.Clear(); //limpar os parâmetros utilizados para a próxima execução
             }
