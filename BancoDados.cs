@@ -178,7 +178,7 @@ namespace ExemploCRUDE
             return lista;
         }
 
-         public List<Categoria> SelCategoria(string titulo)
+        public List<Categoria> SelCategoria(string titulo)
         {
             var lista = new List<Categoria>();
             try
@@ -217,5 +217,50 @@ namespace ExemploCRUDE
             }
             return lista;
         }
+        /// usando Procedure
+        public bool AddCliente(Cliente cli)
+        {
+            bool rs = false;
+            try
+            {
+                cn = new SqlConnection();
+                cn.ConnectionString = @"Data Source = .\sqlexpress; Initial Catalog = Papelaria;  User ID = sa; Password = senai@123;";
+                cn.Open();
+                comandos = new SqlCommand();
+                comandos.Connection = cn;
+                comandos.CommandType = CommandType.StoredProcedure;
+                comandos.CommandText = "CadCliente";
+                SqlParameter pnome = new SqlParameter("@nome",SqlDbType.VarChar,50);
+                pnome.Value = cli.nomecliente;
+                comandos.Parameters.Add(pnome);
+                SqlParameter pemail = new SqlParameter("@email",SqlDbType.VarChar,50);
+                pemail.Value = cli.emailc;
+                comandos.Parameters.Add(pemail);
+                SqlParameter pcpf = new SqlParameter("@nome",SqlDbType.VarChar,15);
+                pcpf.Value = cli.cpf;
+                comandos.Parameters.Add(pcpf);              
+                
+                int r = comandos.ExecuteNonQuery();
+                if(r > 0)
+                
+                    rs = true;
+                                    
+                comandos.Parameters.Clear();
+            }
+            catch(SqlException sqlex)
+            {
+                throw new Exception("Erro ao tentar cadastrar cliente: " + sqlex.Message);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Erro: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+            
+            return rs;
+            }
+        }
     }
-}
